@@ -46,7 +46,7 @@
                 setTimeout(() => {
                     //继承外部作用域的this//注意此时的函数写成箭头函数(因为它并不是由vue来调用的)
                     //如果写成function(){}的形式 this === window,则无法更新watch属性
-                    //异步
+                    // !!! 异步
                     this.fullName = newF +  '-' + this.lastName;
                 }, 1000);
             },
